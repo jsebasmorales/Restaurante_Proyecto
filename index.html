@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inicio</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="nav__bar--logo">
+                <img src="./image/logo_temporal.png" alt="" />
+            </div>
+            <nav class="nav__bar">
+                <ul class="nav__bar--interna">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./sections/nuestro-restaurante.html">Nuestro restaurante</a>
+                    </li>
+                    <li>
+                        <a href="./sections/menu.html">Menú</a>
+                    </li>
+                    <li>
+                        <a href="./sections/galeria.html">Galería</a>
+                    </li>
+                    <li>
+                        <a href="./sections/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav__bar--reserva">
+                <button class="button__general"><a href="#reserva">Reserva</a></button>
+            </div>
+        </header>
+        <main>
+            <!-- Hero Banner  -->
+            <section class="hero__banner">
+                <div>
+                    <span>Conoce más</span>
+                    <h1>Cortes Premium</h1>
+                    <p>Cortes importados de alta calidad.</p>
+                </div>
+            </section>
+            <!-- Nosotros -->
+            <section class="nosotros">
+                <div class="nosotros__texto">
+                    <span>Bienvenidos</span>
+                    <h2>¡50 años sirviendo experiencias!</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut potenti morbi sed malesuada gravida amet elementum nibh. Pulvinar eros, facilisis id in vitae, sit platea. Sapien
+                        urna eget eleifend blandit. Purus malesuada euismod gravida eget ac arcu quam risus vitae. Tristique gravida phasellus mauris interdum libero orci. Amet ultrices integer lectus
+                        vulputate ullamcorper mattis.
+                    </p>
+                    <button class="button__general"><a href="./sections/nuestro-restaurante.html">Leer más</a></button>
+                </div>
+            </section>
+            <!-- Cortes Premium -->
+            <section class="cortes">
+                <div class="cortes__titulo">
+                    <span>Conoce más</span>
+                    <h2>Cortes Premium</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione sapiente quidem quisquam?</p>
+                </div>
+                <div class="cortes__tipo">
+                    <div class="cortes__tipo--card">
+                        <img src="./image/tomahawk-parrilla.JPG" alt="tomahawk a la parrilla con tomate" />
+                        <h3>Tomahawk a la parrilla con naranja</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quidem iste ullam? Tempora placeat iusto maiores dignissimos, similique quidem laboriosam. Inventore
+                            molestiae suscipit beatae dolor minus labore laborum incidunt nostrum.
+                        </p>
+                    </div>
+                    <div class="cortes__tipo--card">
+                        <img src="./image/ribeye-rucula-tomate.jpg" alt="Ribeye con rucula y tomate" />
+                        <h3>Ribeye con rúcula y tomáte</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quidem iste ullam? Tempora placeat iusto maiores dignissimos, similique quidem laboriosam. Inventore
+                            molestiae suscipit beatae dolor minus labore laborum incidunt nostrum.
+                        </p>
+                    </div>
+                    <div class="cortes__tipo--card">
+                        <img src="./image/filet-mignon-sal-marina.jpg" alt="Filet mignon con sal marina" />
+                        <h3>Filet mignon con sal marina</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quidem iste ullam? Tempora placeat iusto maiores dignissimos, similique quidem laboriosam. Inventore
+                            molestiae suscipit beatae dolor minus labore laborum incidunt nostrum.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Formulario de reserva -->
+            <section id="reserva" class="reserva">
+                <div class="reserva__texto">
+                    <span>Ven y disfruta</span>
+                    <h2>Reservaciones</h2>
+                    <p>Tenemos preparado un espacio espacial para ti. Ven y conócelo</p>
+                </div>
+                <form class="reserva__form">
+                    <div class="reserva__form--main">
+                        <div class="fecha">
+                            <label for="date-reservation">Fecha:</label>
+                            <input type="date" name="fecha" id="date-reservation" value="" min="2020-01-01" max="2100-01-01" required placeholder="Fecha:" />
+                        </div>
+                        <div class="hora">
+                            <label for="time-reservation">Hora:</label>
+                            <input type="time" name="hora" id="date-reservation" value="" required placeholder="Hora:" />
+                        </div>
+                        <div class="invitados">
+                            <label for="guest">Invitados:</label>
+                            <input type="number" name="invitados" id="guest" max="40" required placeholder="Invitados:" />
+                        </div>
+                        <div class="nombre">
+                            <label for="name">Nombre:</label>
+                            <input type="text" name="nombre" id="name" max="" placeholder="Nombre:" />
+                        </div>
+                        <div class="email">
+                            <label for="email">Email:</label>
+                            <input type="email" name="correo" id="email" placeholder="Email:" />
+                        </div>
+                        <div class="telefono">
+                            <label for="phone">Teléfono:</label>
+                            <input type="text" name="telefono" id="phone" placeholder="Teléfono:" />
+                        </div>
+                        <div class="ubicacion">
+                            <p>Selecciona la ubicación de tu preferencia</p>
+                            <label> <input type="radio" name="ubicacion" value="balcon" />Balcón </label>
+                            <label> <input type="radio" name="ubicacion" value="tarima" />Tarima </label>
+                            <label> <input type="radio" name="ubicacion" value="privado" />Privado </label>
+                        </div>
+                    </div>
+                    <div class="tyc">
+                        <input type="checkbox" name="check-tyc" id="tyc" value="check-tyc" />
+                        <label for="tyc">Acepto los términos y condiciones y la política de tratamiento de datos</label>
+                        <div class="tyc__boton">
+                            <button class="button__general">Reservar</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <!-- Nuestras recetas -->
+            <section class="recetas">
+                <div class="recetas__cont">
+                    <div class="recetas__titulo">
+                        <span>Deliciosos platos</span>
+                        <h2>Nuestras recetas</h2>
+                        <p>Prueba estos deliciosos platos en la comodidad de tu casa.</p>
+                    </div>
+                    <div class="recetas__recetario">
+                        <div class="recetas__recetario--card receta_1">
+                            <img src="./image/Tomahawk-a-la-parrilla.jpg" alt="" />
+                            <p>25 de enero de 2022</p>
+                            <h2>Tomahawk a la parrilla</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure rem error minima quam, quia aut quae quisquam dolorum tempore sunt labore dignissimos sed, cum aliquid
+                                saepe maxime officia placeat distinctio.
+                            </p>
+                            <button class="button__general">Leer más</button>
+                        </div>
+                        <div class="recetas__recetario--card receta_2">
+                            <img src="./image/Tomahawk-con-chiles.jpg" alt="" />
+                            <p>3 de febrero de 2022</p>
+                            <h2>Tomahawk con Mantequilla de Chiles</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure rem error minima quam, quia aut quae quisquam dolorum tempore sunt labore dignissimos sed, cum aliquid
+                                saepe maxime officia placeat distinctio.
+                            </p>
+                            <button class="button__general">Leer más</button>
+                        </div>
+                        <div class="recetas__recetario--card receta_3">
+                            <img src="./image/tomahawk-romero.JPG" alt="" />
+                            <p>4 de abril de 2022</p>
+                            <h2>Tomahawk sellado con romero</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure rem error minima quam, quia aut quae quisquam dolorum tempore sunt labore dignissimos sed, cum aliquid
+                                saepe maxime officia placeat distinctio.
+                            </p>
+                            <button class="button__general">Leer más</button>
+                        </div>
+                        <div class="recetas__recetario--card receta_4">
+                            <img src="./image/tomahawk-cherry.JPG" alt="" />
+                            <p>4 de abril de 2022</p>
+                            <h2>Tomahawk con tomate Cherry</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure rem error minima quam, quia aut quae quisquam dolorum tempore sunt labore dignissimos sed, cum aliquid
+                                saepe maxime officia placeat distinctio.
+                            </p>
+                            <button class="button__general">Leer más</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Nuestro menú -->
+            <section class="menu">
+                <div class="menu__texto">
+                    <span>Disfruta un delicioso corte</span>
+                    <h2>Nuestro menú</h2>
+                </div>
+                <div class="menu__left">
+                    <div class="menu__left--card">
+                        <picture>
+                            <source media="(max-width: 500px)" srcset="" />
+                            <source media="(max-width: 768px)" srcset="" />
+                            <source media="(max-width: 1000px)" srcset="" />
+                            <source media="(max-width: 1400px)" srcset="" />
+                            <img src="" alt="" />
+                        </picture>
+                        <span>Menú 1</span>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vitae asperiores voluptate provident fuga facilis tempore nam doloribus reprehenderit! At laudantium
+                            culpa quibusdam error dolorum, quos nihil hic ex atque.
+                        </p>
+                        <p class="menu__card--precio">$45.000</p>
+                    </div>
+                    <div class="menu__left--card">
+                        <picture>
+                            <source media="(max-width: 500px)" srcset="" />
+                            <source media="(max-width: 768px)" srcset="" />
+                            <source media="(max-width: 1000px)" srcset="" />
+                            <source media="(max-width: 1400px)" srcset="" />
+                            <img src="" alt="" />
+                        </picture>
+                        <span>Menú 2</span>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vitae asperiores voluptate provident fuga facilis tempore nam doloribus reprehenderit! At laudantium
+                            culpa quibusdam error dolorum, quos nihil hic ex atque.
+                        </p>
+                        <p class="menu__card--precio">$45.000</p>
+                    </div>
+                    <div class="menu__left--card">
+                        <picture>
+                            <source media="(max-width: 500px)" srcset="" />
+                            <source media="(max-width: 768px)" srcset="" />
+                            <source media="(max-width: 1000px)" srcset="" />
+                            <source media="(max-width: 1400px)" srcset="" />
+                            <img src="" alt="" />
+                        </picture>
+                        <span>Menú 3</span>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vitae asperiores voluptate provident fuga facilis tempore nam doloribus reprehenderit! At laudantium
+                            culpa quibusdam error dolorum, quos nihil hic ex atque.
+                        </p>
+                        <p class="menu__card--precio">$45.000</p>
+                    </div>
+                </div>
+                <div class="menu__rigth">
+                    <div class="menu__right--card">
+                        <picture>
+                            <source media="(max-width: 500px)" srcset="" />
+                            <source media="(max-width: 768px)" srcset="" />
+                            <source media="(max-width: 1000px)" srcset="" />
+                            <source media="(max-width: 1400px)" srcset="" />
+                            <img src="" alt="" />
+                        </picture>
+                        <span>Menú 4</span>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vitae asperiores voluptate provident fuga facilis tempore nam doloribus reprehenderit! At laudantium
+                            culpa quibusdam error dolorum, quos nihil hic ex atque.
+                        </p>
+                        <p class="menu__card--precio">$45.000</p>
+                    </div>
+                    <div class="menu__right--card">
+                        <picture>
+                            <source media="(max-width: 500px)" srcset="" />
+                            <source media="(max-width: 768px)" srcset="" />
+                            <source media="(max-width: 1000px)" srcset="" />
+                            <source media="(max-width: 1400px)" srcset="" />
+                            <img src="" alt="" />
+                        </picture>
+                        <span>Menú 5</span>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vitae asperiores voluptate provident fuga facilis tempore nam doloribus reprehenderit! At laudantium
+                            culpa quibusdam error dolorum, quos nihil hic ex atque.
+                        </p>
+                        <p class="menu__card--precio">$45.000</p>
+                    </div>
+                    <div class="menu__right--card">
+                        <picture>
+                            <source media="(max-width: 500px)" srcset="" />
+                            <source media="(max-width: 768px)" srcset="" />
+                            <source media="(max-width: 1000px)" srcset="" />
+                            <source media="(max-width: 1400px)" srcset="" />
+                            <img src="" alt="" />
+                        </picture>
+                        <span>Menú 6</span>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vitae asperiores voluptate provident fuga facilis tempore nam doloribus reprehenderit! At laudantium
+                            culpa quibusdam error dolorum, quos nihil hic ex atque.
+                        </p>
+                        <p class="menu__card--precio">$45.000</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="footer__redes">
+                    <a href="#"><img src="./image/instagram.svg" alt="" /></a>
+                    <a href="#"><img src="./image/facebook.svg" alt="" /></a>
+                </div>
+                <p>2022 Lorem .All rights reserved</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,1714 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;700&family=The+Nautigal:wght@400;700&display=swap');
+
+/*
+* Abril Fatface: h1, h2 (400).
+! font-family: 'Abril Fatface', cursive;
+* The Nautigal h3 (400).
+! font-family: 'The Nautigal', cursive;
+* Poppins: párrafos (400) 
+* Poppins: h4 (700)
+! font-family: 'Poppins', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Estilos de headings y párrafo*/
+:root {
+    --heading: #bb9356;
+    --base: #bb9356;
+    --parrafo: #e2e2e2;
+    --blanco: #ffffff;
+    --negro: #000;
+    --background: #222222;
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 900;
+    font-size: 39px;
+    color: var(--blanco);
+}
+
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 700;
+    font-size: 39px;
+    color: var(--blanco);
+    letter-spacing: 3px;
+}
+
+h3 {
+    font-family: 'The Nautigal', cursive;
+    font-weight: 500;
+    font-size: 36px;
+    color: var(--heading);
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--heading);
+}
+
+li a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--blanco);
+}
+
+li a:hover {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--base);
+}
+
+li a:active {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--blanco);
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--parrafo);
+}
+span {
+    font-family: 'The Nautigal', cursive;
+    font-weight: 500;
+    font-size: 36px;
+    color: var(--heading);
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
+}
+
+input::placeholder {
+    color: var(--blanco);
+}
+
+.button__general {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: var(--blanco);
+    background-color: var(--base);
+    border: none;
+    padding: 5px 20px;
+    border-radius: 40px;
+}
+
+.button__general a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.button__general a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.button__general:hover {
+    box-shadow: 0px 2px 10px rgba(223, 174, 100, 0.466);
+    scale: 1.03;
+    transition: .2s;
+}
+
+/*
+-----------------
+------ BODY -----
+-----------------
+*/
+body {
+    background-color: #222222;
+}
+
+
+/*
+-----------------
+----- HEADER ----
+-----------------
+*/
+.header {
+    display: grid;
+    grid-template-areas: 
+    "logo logo"
+    "nav boton";
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: rgba(34, 34, 34, 0.95);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.705);
+    z-index: 1;
+}
+
+.nav__bar--logo {
+    grid-area: logo;
+}
+
+.nav__bar--logo img {
+    width: 100px;
+    margin-left: 20px;
+}
+
+.nav__bar {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+}
+
+.nav__bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: right;
+}
+
+.nav__bar li {
+    margin: 0 auto;
+}
+
+.nav__bar li a {
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+.nav__bar--reserva {
+    grid-area: boton; 
+}
+
+/*
+-----------------
+------ HOME -----
+-----------------
+*/
+
+/* Hero Banner */
+.hero__banner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url("../image/nosotros-parroilla.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+.hero__banner p {
+    color: var(--blanco);
+}
+
+.hero__banner div {
+    background-color: rgba(0, 0, 0, 0.705);
+    padding: 10px 40px;
+}
+
+
+/* Nosotros */
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 40px;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.nosotros__texto img { 
+    width: 80px;
+}
+
+.nosotros__texto {
+
+    text-align: center;
+    color: var(--base);
+}
+
+
+.nosotros__texto button {
+    margin-top: 10px ;
+}
+
+
+/* Cortes Premium */
+.cortes {
+    background-image: url("../image/cortes_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.cortes__titulo {
+    padding-bottom: 40px;
+}
+
+.cortes__tipo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.cortes__tipo div {
+    width: 400px;
+}
+
+.cortes__tipo--card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(63, 63, 63, 0.4);
+    backdrop-filter: blur(2px);
+    margin: 10px 5px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(104, 104, 104, .5);
+}
+
+.cortes__tipo--card img {
+    margin: 5px 20px;
+    border-radius: 10px;
+}
+
+.cortes__tipo--card h3 {
+    padding: 10px 0;
+}
+
+.cortes__tipo--card p {
+    margin: 0px 20px;
+    text-align: justify;
+}
+
+
+/* Formularios de reserva */
+.reserva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+    margin: 0 auto;
+
+}
+
+.reserva__texto {
+    text-align: center;
+    width: 500px;
+    margin: 0 40px;
+}
+
+.reserva__texto p {
+    padding: 20px;
+}
+
+.fecha {
+    grid-area: fecha;
+}
+
+.hora {
+    grid-area: hora;
+}
+
+.invitados {
+    grid-area: invitados;
+}
+
+.nombre {
+    grid-area: nombre;
+}
+
+.email {
+    grid-area: email;
+}
+
+.telefono {
+    grid-area: telefono;
+}
+
+.ubicacion {
+    grid-area: ubicacion;
+}
+
+.tyc {
+    grid-area: tyc;
+}
+
+.reserva__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reserva__form--main {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "fecha      hora        invitados"
+    "nombre     email       telefono"
+    "ubicacion  ubicacion   ubicacion"
+    "tyc        tyc         tyc";
+    padding: 20px 40px;
+    border: 1px solid var(--base);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.reserva__form--main label {
+    display: none;
+}
+
+.reserva__form--main input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.reserva__form--main input::placeholder {
+    color: var(--base);
+}
+
+.reserva__form--main input:focus {
+    outline: none;
+    border-color: var(--base);
+}
+
+.ubicacion label {
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+    color: var(--blanco);
+    padding: 10px;
+}
+
+.ubicacion input {
+    margin: 0px 5px;
+    width: auto;
+}
+
+.tyc {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.tyc__boton {
+    margin: 10px;
+}
+
+.tyc label {
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+    color: var(--blanco);
+    padding: 10px;
+}
+
+/* Nuestras Recetas */
+.recetas {
+    background-image: url("../image/recetas_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 80px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.recetas__titulo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    align-items: center;
+    margin-right: 80px;
+}
+
+.receta_1 {
+    grid-area: receta1;
+}
+
+.receta_2 {
+    grid-area: receta2;
+}
+
+.receta_3 {
+    grid-area: receta3;
+}
+
+.receta_4 {
+    grid-area: receta4;
+}
+
+.recetas__recetario {
+    display: flex;
+    display: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.recetas__cont {
+    max-width: 1200px;
+}
+
+.recetas__recetario--card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(63, 63, 63, 0.4);
+    backdrop-filter: blur(2px);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(104, 104, 104, .5);
+    max-width: 250px;
+    height: auto;
+    margin: 10px 10px;
+}
+
+.recetas__recetario--card img {
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+.recetas__recetario--card button {
+    margin: 10px auto;
+}
+
+/* Menú */
+
+.menu {
+    display: grid;
+    grid-template-areas: 
+    "menu__texto menu__texto"
+    "menu__left  menu__right";
+    justify-content: center;
+    width: 1500px;
+    margin: auto;
+    padding: 40px 0;
+    gap: 60px;
+    max-width: 1200px;
+}
+
+.menu__texto {
+    grid-area: menu__texto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu__left {
+    grid-area: menu__left;
+    padding-left: 50px;
+}
+
+.menu__right {
+    grid-area: menu__rigth;
+    padding-right: 50px;
+}
+
+.menu__right--card, .menu__left--card {
+    padding: 15px 0;
+}
+
+.menu__left--card--precio, .menu__right--card--precio {
+    text-align: right;
+}
+
+/* Footer */
+.footer {
+    display: grid;
+    height: auto;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.705);
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.footer__redes {
+    text-align: center;
+    padding: 10px;
+}
+
+.footer__redes img {
+    width: 40px;
+    margin: 10px;
+}
+
+/*
+-----------------
+---- NOSOTROS ---
+-----------------
+*/
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nosotros p {
+    margin: 25px 0;
+    max-width: 950px;
+}
+
+.nosotros__fotos img {
+    width: 500px;
+    border-radius: 25% 10%;
+    margin: 0 40px;
+}
+
+/* CTA */
+
+.cta {
+    display: grid;
+    grid-template-areas: 
+    "texto  img";
+    background-image: url('../image/cortes_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    box-shadow: 0px 0px 10px rgba(223, 174, 100, 0.466);
+    align-items: center;
+    height: auto;
+}
+
+.cta__texto {
+    display: flex;
+    flex-direction: column;
+    grid-area: texto;
+    text-align: right;
+    align-items: flex-start;
+    margin-left: 240px;
+}
+
+.cta__texto p {
+    padding: 20px 0;
+}
+
+.cta__img--mov img {
+    display: flex;
+    grid-area: img;
+    width: 240px;
+    margin: 20px 0;
+}
+
+/* CHEF */
+
+.chef {
+    display: grid;
+    grid-template-areas: 
+    "img texto";
+    padding: 40px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.chef__img {
+    grid-area: img;
+}
+
+.chef__img img {
+    width: 480px;
+    border-radius: 25% 10%;
+}
+
+.chef__texto {
+    display: flex;
+    flex-direction: column;
+    grid-area: texto;
+    margin-left: 80px;
+    justify-content: center;
+}
+
+/*
+-----------------
+---- CONTACTO ---
+-----------------
+*/
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.contacto__texto {
+    text-align: center;
+    width: 500px;
+    margin: 0 40px;
+}
+
+.contacto__texto p {
+    padding: 20px;
+}
+
+.nombre {
+    grid-area: nombre;
+}
+
+.email {
+    grid-area: email;
+}
+
+.telefono {
+    grid-area: telefono;
+}
+
+.mensaje {
+    grid-area: mensaje;
+}
+
+.boton {
+    grid-area: boton;
+}
+
+.contacto__form {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "nombre     nombre"
+    "email      telefono"
+    "mensaje    mensaje"
+    "boton      boton";
+    padding: 20px 40px;
+}
+
+.contacto__form label {
+    display: none;
+}
+
+.contacto__form input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.contacto__form input::placeholder {
+    color: var(--base);
+}
+
+.contacto__form input:focus {
+    outline: none;
+    border-color: var(--base);
+}
+
+.mensaje textarea {
+    color: var(--base);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    min-width: 380px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 150px;
+}
+
+.mensaje textarea::placeholder {
+    color: var(--base);
+}
+
+.mensaje textarea:focus {
+    outline: none;
+    border: none;
+}
+
+
+/*
+-----------------
+- MEDIA QUERIES -
+------ HOME -----
+-----------------
+*/
+
+@media screen and (max-width: 500px) {    
+    
+    /* HEADER */    
+    .header {
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "nav"
+        "boton";
+        background-color: rgba(34, 34, 34, 0.95);
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.705);
+        max-width: 100%;
+    }
+
+    .nav__bar--interna {
+        min-width: 235px;
+        flex-wrap: wrap;
+    }
+
+    .nav__bar--reserva {
+        padding-top: 15px;
+    }
+
+    /* HERO BANNER */
+    .hero__banner {
+        max-width: 100%;
+    }
+
+    /* NOSOTROS */
+    .nosotros {
+        max-width: 100%;
+    }
+
+    /* CORTES PREMIUM */
+    .cortes {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .cortes__tipo--card {
+        max-width: 100%;
+    }
+    
+    /* FORMULARIO DE RESERVA */
+    .reserva {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 10px;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .reserva__texto {
+        max-width: 320px;
+    }
+    
+    .reserva__form--main {
+        display: grid;
+        gap: 10px;
+        grid-template-areas: 
+        "fecha"
+        "hora"
+        "invitados"
+        "telefono"
+        "nombre"
+        "email"
+        "ubicacion"
+        "tyc";
+        padding: 20px 10px;
+        border: 1px solid var(--base);
+        border-radius: 20px;
+        text-align: center;
+        max-width: 400px;
+        width: 0 auto;
+    }
+
+    .reserva__form--main input {
+        width: 80%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .ubicacion label {
+        display: inline;
+        font-family: 'Poppins', sans-serif;
+        color: var(--blanco);
+        padding: 0px;
+    }
+    
+    .ubicacion input {
+        margin: 0px 5px;
+        width: auto;
+    }
+
+    .tyc {
+        max-width: 320px;
+    }
+
+    /* NUESTRAS RECETAS */
+    .recetas {
+        max-width: 100%;
+    }
+    
+    .recetas__titulo {
+        margin: 0 auto;
+    } 
+
+    /* MENÚ */
+    .menu {
+        display: grid;
+        grid-template-areas: 
+        "menu__texto"
+        "menu__left"
+        "menu__right";
+        justify-content: center;
+        margin: auto;
+        padding: 40px 0;
+        gap: 0px;
+        width: auto;
+        max-width: 100%;
+    }
+
+    .menu__texto {
+        grid-area: menu__texto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .menu__left {
+        grid-area: menu__left;
+        padding: 0;
+    }
+
+    .menu__left--card {
+        padding: 0 40px;
+    }
+    
+    .menu__right {
+        grid-area: menu__rigth;
+        padding: 0;
+    }
+
+    .menu__right--card {
+        padding: 0 40px;
+    }
+    
+    .menu__card--precio {
+        text-align: right;
+    }
+    
+    /* FOOTER */
+    .footer {
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 768px) {    
+    
+    /* HEADER */    
+    .header {
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "nav"
+        "boton";
+        background-color: rgba(34, 34, 34, 0.95);
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.705);
+        max-width: 100%;
+    }
+
+    .nav__bar--interna {
+        min-width: 235px;
+        flex-wrap: wrap;
+    }
+
+    .nav__bar--reserva {
+        padding-top: 15px;
+    }
+
+    /* HERO BANNER */
+    .hero__banner {
+        max-width: 100%;
+    }
+
+    /* NOSOTROS */
+    .nosotros {
+        max-width: 100%;
+    }
+
+    /* CORTES PREMIUM */
+    .cortes {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .cortes__tipo--card {
+        max-width: 100%;
+    }
+
+    /* FORMULARIO DE RESERVA */
+    .reserva {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 10px;
+        margin: 0 auto;
+    }
+
+    .reserva__texto {
+        max-width: 320px;
+    }
+    
+    .reserva__form--main {
+        display: grid;
+        gap: 10px;
+        grid-template-areas: 
+        "fecha      hora"
+        "invitados  telefono"
+        "nombre     email"
+        "ubicacion  ubicacion"
+        "tyc        tyc";
+        padding: 20px 10px;
+        border: 1px solid var(--base);
+        border-radius: 20px;
+        text-align: center;
+        max-width: 768px;
+        width: 0 auto;
+    }
+
+    .reserva__form--main input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .ubicacion label {
+        display: inline;
+        font-family: 'Poppins', sans-serif;
+        color: var(--blanco);
+        padding: 0px;
+    }
+    
+    .ubicacion input {
+        margin: 0px 5px;
+        width: auto;
+    }
+
+    .tyc {
+        max-width: 320px;
+    }
+
+    /* NUESTRAS RECETRAS */
+    .recetas {
+        max-width: 100%;
+    }
+    
+    .recetas__titulo {
+        margin: 0 auto;
+    }
+
+    /* MENÚ */
+    .menu {
+        display: grid;
+        grid-template-areas: 
+        "menu__texto"
+        "menu__left"
+        "menu__right";
+        justify-content: center;
+        margin: auto;
+        padding: 40px 0;
+        gap: 0px;
+        width: auto;
+        max-width: 100%;
+    }
+
+    .menu__texto {
+        grid-area: menu__texto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .menu__left {
+        grid-area: menu__left;
+        padding: 0;
+    }
+
+    .menu__left--card {
+        padding: 0 40px;
+    }
+    
+    .menu__right {
+        grid-area: menu__rigth;
+        padding: 0;
+    }
+
+    .menu__right--card {
+        padding: 0 40px;
+    }
+    
+    .menu__card--precio {
+        text-align: right;
+    }
+    
+    /* FOOTER */
+    .footer {
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    /* HEADER */    
+    .header {
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "nav boton";
+        background-color: rgba(34, 34, 34, 0.95);
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.705);
+        max-width: 100%;
+    }
+
+    .nav__bar--interna {
+        min-width: 235px;
+        flex-wrap: wrap;
+    }
+
+    .nav__bar--reserva {
+        padding-top: 15px;
+    }
+
+    /* HERO BANNER */
+    .hero__banner {
+        max-width: 100%;
+    }
+
+    /* NOSOTROS */
+    .nosotros {
+        max-width: 100%;
+    }
+
+    /* CORTES PREMIUM */
+    .cortes {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .cortes__tipo--card {
+        max-width: 100%;
+    }
+
+    /* FORMULARIO DE RESERVA */
+    .reserva {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 10px;
+        margin: 0 auto;
+    }
+
+    .reserva__texto {
+        max-width: 320px;
+    }
+    
+    .reserva__form--main {
+        display: grid;
+        gap: 10px;
+        grid-template-areas: 
+        "fecha      hora        invitados"
+        "nombre     email       telefono"
+        "ubicacion  ubicacion   ubicacion"
+        "tyc        tyc         tyc";
+        padding: 20px 10px;
+        border: 1px solid var(--base);
+        border-radius: 20px;
+        text-align: center;
+        max-width: 768px;
+        width: 0 auto;
+    }
+
+    .reserva__form--main input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .ubicacion label {
+        display: inline;
+        font-family: 'Poppins', sans-serif;
+        color: var(--blanco);
+        padding: 0px;
+    }
+    
+    .ubicacion input {
+        margin: 0px 5px;
+        width: auto;
+    }
+
+    .tyc {
+        max-width: 320px;
+    }
+
+    /* NUESTRAS RECETRAS */
+    .recetas {
+        max-width: 100%;
+    }
+    
+    .recetas__titulo {
+        margin: 0 auto;
+    }
+
+    /* MENÚ */
+    .menu {
+        display: grid;
+        grid-template-areas: 
+        "menu__texto menu__texto"
+        "menu__left  menu__right";
+        justify-content: center;
+        margin: auto;
+        padding: 40px 0;
+        gap: 0px;
+        width: auto;
+        max-width: 100%;
+    }
+
+    .menu__texto {
+        grid-area: menu__texto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .menu__left {
+        grid-area: menu__left;
+        padding: 0;
+    }
+
+    .menu__left--card {
+        padding: 0 40px;
+    }
+    
+    .menu__right {
+        grid-area: menu__rigth;
+        padding: 0;
+    }
+
+    .menu__right--card {
+        padding: 0 40px;
+    }
+    
+    .menu__card--precio {
+        text-align: right;
+    }
+    
+    /* FOOTER */
+    .footer {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    /* HEADER */    
+    .header {
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "nav boton";
+        background-color: rgba(34, 34, 34, 0.95);
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.705);
+        max-width: 100%;
+    }
+
+    .nav__bar--interna {
+        min-width: 235px;
+        flex-wrap: wrap;
+    }
+
+    .nav__bar--reserva {
+        padding-top: 15px;
+    }
+
+    /* HERO BANNER */
+    .hero__banner {
+        max-width: 100%;
+    }
+
+    /* NOSOTROS */
+    .nosotros {
+        max-width: 100%;
+    }
+
+    /* CORTES PREMIUM */
+    .cortes {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .cortes__tipo--card {
+        max-width: 100%;
+    }
+
+    /* FORMULARIO DE RESERVA */
+    .reserva {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 10px;
+        margin: 0 auto;
+    }
+
+    .reserva__texto {
+        max-width: 320px;
+    }
+    
+    .reserva__form--main {
+        display: grid;
+        gap: 10px;
+        grid-template-areas: 
+        "fecha      hora        invitados"
+        "nombre     email       telefono"
+        "ubicacion  ubicacion   ubicacion"
+        "tyc        tyc         tyc";
+        padding: 20px 10px;
+        border: 1px solid var(--base);
+        border-radius: 20px;
+        text-align: center;
+        max-width: 768px;
+        width: 0 auto;
+    }
+
+    .reserva__form--main input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .ubicacion label {
+        display: inline;
+        font-family: 'Poppins', sans-serif;
+        color: var(--blanco);
+        padding: 0px;
+    }
+    
+    .ubicacion input {
+        margin: 0px 5px;
+        width: auto;
+    }
+
+    .tyc {
+        max-width: 320px;
+    }
+
+    /* NUESTRAS RECETRAS */
+    .recetas {
+        max-width: 100%;
+    }
+    
+    .recetas__titulo {
+        margin: 0 auto;
+    }
+
+    /* MENÚ */
+    .menu {
+        display: grid;
+        grid-template-areas: 
+        "menu__texto menu__texto"
+        "menu__left  menu__right";
+        justify-content: center;
+        margin: auto;
+        padding: 40px 0;
+        gap: 0px;
+        width: auto;
+        max-width: 100%;
+    }
+
+    .menu__texto {
+        grid-area: menu__texto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .menu__left {
+        grid-area: menu__left;
+        padding: 0;
+    }
+
+    .menu__left--card {
+        padding: 0 40px;
+    }
+    
+    .menu__right {
+        grid-area: menu__rigth;
+        padding: 0;
+    }
+
+    .menu__right--card {
+        padding: 0 40px;
+    }
+    
+    .menu__card--precio {
+        text-align: right;
+    }
+    
+    /* FOOTER */
+    .footer {
+        max-width: 100%;
+    }
+}
+
+/*
+-----------------
+- MEDIA QUERIES -
+---- NUESTRO ----
+-- RESTAURANTE --
+-----------------
+*/
+
+@media screen and (max-width: 500px){
+
+    /* HEADER */    
+    .header {
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "nav"
+        "boton";
+        background-color: rgba(34, 34, 34, 0.95);
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.705);
+        max-width: 100%;
+    }
+
+    .nav__bar--interna {
+        min-width: 235px;
+        flex-wrap: wrap;
+    }
+
+    .nav__bar--reserva {
+        padding-top: 15px;
+    }
+
+    .nosotros__fotos img {
+        width: 250px;
+    }
+
+    .cta {
+        height: auto;
+        grid-template-areas: 
+        "texto"
+        "img";
+        padding: 20px 10px;
+    }
+    
+    .cta__texto {
+        display: flex;
+        flex-direction: column;
+        grid-area: texto;
+        text-align: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+    
+    .cta__texto p {
+        padding: 20px 0;
+    }
+    
+    .cta__img--mov img {
+        display: none;
+    }
+
+    .chef {
+        grid-template-areas: 
+        "texto"
+        "img";
+        margin: 0 auto;
+        justify-items: center;
+    }
+    
+    .chef__img {
+        justify-content: center;
+    }
+    
+    .chef__img img {
+        width: 250px;
+        margin-top: 15px;
+        border-radius: 25% 10%;
+    }
+
+    .chef__texto {
+        display: flex;
+        flex-direction: column;
+        grid-area: texto;
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+    /* HEADER */    
+    .header {
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "nav"
+        "boton";
+        background-color: rgba(34, 34, 34, 0.95);
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.705);
+        max-width: 100%;
+    }
+
+    .nav__bar--interna {
+        min-width: 235px;
+        flex-wrap: wrap;
+    }
+
+    .nav__bar--reserva {
+        padding-top: 15px;
+    }
+
+    .nosotros__fotos {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .nosotros__fotos img {
+        width: 220px;
+        margin: 10px;
+    }
+
+    .cta {
+        height: auto;
+        grid-template-areas: 
+        "texto"
+        "img";
+        padding: 20px 10px;
+    }
+    
+    .cta__texto {
+        display: flex;
+        flex-direction: column;
+        grid-area: texto;
+        text-align: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+    
+    .cta__texto p {
+        padding: 20px 0;
+    }
+    
+    .cta__img--mov img {
+        display: none;
+    }
+
+    .chef {
+        grid-template-areas: 
+        "texto"
+        "img";
+        margin: 0 auto;
+        justify-items: center;
+    }
+    
+    .chef__img {
+        justify-content: center;
+    }
+    
+    .chef__img img {
+        width: 250px;
+        margin-top: 15px;
+        border-radius: 25% 10%;
+    }
+
+    .chef__texto {
+        display: flex;
+        flex-direction: column;
+        grid-area: texto;
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* HEADER */    
+    .header {
+        display: grid;
+        grid-template-areas: 
+        "logo"
+        "nav"
+        "boton";
+        background-color: rgba(34, 34, 34, 0.95);
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.705);
+        max-width: 100%;
+    }
+
+    .nav__bar--interna {
+        min-width: 235px;
+        flex-wrap: wrap;
+    }
+
+    .nav__bar--reserva {
+        padding-top: 15px;
+    }
+
+    .nosotros__fotos img {
+        width: 250px;
+    }
+
+    .cta {
+        height: auto;
+        grid-template-areas: 
+        "texto img";
+        padding: 20px 10px;
+        justify-content: space-around;
+        width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .cta__texto {
+        display: flex;
+        flex-direction: column;
+        grid-area: texto;
+        text-align: center;
+        align-items: flex-start;
+        margin-left: 0px;
+    }
+    
+    .cta__texto p {
+        padding: 20px 0;
+        text-align: left;
+        max-width: 240px;
+    }
+    
+    .cta__img--mov img {
+        width: 120px;
+    }
+
+    .chef {
+        grid-template-areas: 
+        "img texto";
+        margin: 0 auto;
+        align-items: center;
+    }
+    
+    .chef__img {
+        justify-content: center;
+    }
+    
+    .chef__img img {
+        width: 200px;
+        margin-top: 15px;
+        border-radius: 25% 10%;
+    }
+
+    .chef__texto {
+        display: flex;
+        flex-direction: column;
+        grid-area: texto;
+        margin: 0 auto;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+
+    .cta__img--mov img {
+        display: flex;
+        grid-area: img;
+        width: 240px;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* HEADER */    
+    .header {
+        display: grid;
+        grid-template-areas: 
+        "logo logo"
+        "nav boton";
+        background-color: rgba(34, 34, 34, 0.95);
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.705);
+        max-width: 100%;
+    }
+
+    .nav__bar--interna {
+        min-width: 235px;
+        flex-wrap: wrap;
+    }
+
+    .nav__bar--reserva {
+        padding-top: 15px;
+    }
+
+    .nosotros__fotos img {
+        width: 500px;
+    }
+
+    .cta {
+        height: auto;
+        grid-template-areas: 
+        "texto img";
+        padding: 20px 10px;
+        justify-content: space-around;
+        width: 1400px;
+        margin: 0 auto;
+    }
+    
+    .cta__texto {
+        display: flex;
+        flex-direction: column;
+        grid-area: texto;
+        text-align: center;
+        align-items: flex-start;
+        margin-left: 0px;
+    }
+    
+    .cta__texto p {
+        padding: 20px 0;
+        text-align: left;
+        max-width: 400px;
+    }
+    
+    .cta__img--mov img {
+        width: 240px;
+        display: flex;
+        grid-area: img;
+        margin: 20px 0;
+    }
+
+    .chef {
+        grid-template-areas: 
+        "img texto";
+        margin: 0 auto;
+        align-items: center;
+    }
+    
+    .chef__img {
+        justify-content: center;
+    }
+    
+    .chef__img img {
+        width: 480px;
+        margin-top: 15px;
+        border-radius: 25% 10%;
+    }
+
+    .chef__texto {
+        display: flex;
+        flex-direction: column;
+        grid-area: texto;
+        margin: 0 auto;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+}

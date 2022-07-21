@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contacto</title>
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="nav__bar--logo">
+                <img src="../image/logo_temporal.png" alt="" />
+            </div>
+            <nav class="nav__bar">
+                <ul>
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="nuestro-restaurante.html">Nuestro restaurante</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Menú</a>
+                    </li>
+                    <li>
+                        <a href="galeria.html">Galería</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav__bar--reserva">
+                <button class="button__general"><a href="../index.html#reserva">Reserva</a></button>
+            </div>
+        </header>
+        <main>
+            <!-- Hero Banner  -->
+            <section class="hero__banner">
+                <div>
+                    <span>Conoce más</span>
+                    <h1>Cortes Premium</h1>
+                    <p>Cortes importados de alta calidad.</p>
+                </div>
+            </section>
+            <!-- Form -->
+            <section class="contacto">
+                <div class="contacto__texto">
+                    <span>Déjanos tu mensaje</span>
+                    <h2>Contáctanos</h2>
+                    <p>Déjanos tu mensaje y pronto nos comunicaremos contigo para ayudarte con tu solicitud.</p>
+                </div>
+                <form class="contacto__form">
+                    <div class="nombre">
+                        <label for="name">Nombre:</label>
+                        <input type="text" name="nombre" id="name" max="" placeholder="Nombre:" />
+                    </div>
+                    <div class="email">
+                        <label for="email">Email:</label>
+                        <input type="email" name="correo" id="email" placeholder="Email:" />
+                    </div>
+                    <div class="telefono">
+                        <label for="phone">Teléfono:</label>
+                        <input type="text" name="telefono" id="phone" placeholder="Teléfono:" />
+                    </div>
+                    <div class="mensaje">
+                        <textarea name="menssaje__name" id="mensaje__id" cols="80" rows="10" placeholder="Escribe tu mensaje aquí"></textarea>
+                    </div>
+                    <div class="boton">
+                        <button class="button__general contacto__button">Enviar</button>
+                    </div>
+                </form>
+            </section>
+            <!-- CTA -->
+            <section class="cta">
+                <div class="cta__texto">
+                    <h3>Reserva y se parte de esta experiencia</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <button class="button__general"><a href="../index.html#reserva">Reserva</a></button>
+                </div>
+                <div class="cta__img">
+                    <picture class="cta__img--mov">
+                        <source media="(min-width: 500px)" srcset="../image/cta-img-500.png" />
+                        <source media="(min-width: 768px)" srcset="../image/cta-img-768.png" />
+                        <source media="(min-width: 1024px)" srcset="../image/cta-img-1024.png" />
+                        <img src="../image/cta-img-1024.png" alt="" />
+                    </picture>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="footer__redes">
+                    <a href="#"><img src="../image/instagram.svg" alt="" /></a>
+                    <a href="#"><img src="../image/facebook.svg" alt="" /></a>
+                </div>
+                <p>2022 Lorem .All rights reserved</p>
+            </div>
+        </footer>
+    </body>
+</html>
