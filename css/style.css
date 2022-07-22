@@ -249,6 +249,21 @@ body {
     padding: 10px 40px;
 }
 
+.hero__banner--texto{
+    animation-name: slideIn;
+    animation-duration: .8s;
+}
+
+@keyframes slideIn {
+    from{
+        margin-left: -100%;
+        opacity: 0;
+    }
+    to {
+        margin-left: 0%;
+    
+    }
+}
 
 /* Nosotros */
 .nosotros {
@@ -289,6 +304,7 @@ body {
 .cortes__titulo {
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 .cortes__tipo {
@@ -414,7 +430,19 @@ body {
 .reserva__form {
     display: flex;
     flex-direction: column;
+    animation-name: rotate;
+    animation-duration: .8s;
 }
+
+@keyframes rotate {
+    from {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
 
 .reserva__form--main {
     display: grid;
